@@ -6,7 +6,7 @@ WORKDIR /rdocker
 RUN git init
 RUN git pull https://github.com/EDIS26/rdocker.git
 
-COPY rdocker .
+RUB echo $user
 
 RUN npm install
 
