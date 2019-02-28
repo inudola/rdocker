@@ -4,7 +4,7 @@ RUN mkdir -p /usr/src/app
 
 WORKDIR /usr/src/app
 
-COPY react-doc .
+COPY package.json /usr/src/app/
 
 RUN npm install
 
