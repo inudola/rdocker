@@ -1,16 +1,12 @@
 FROM node:11.10.0
 
-RUN mkdir -p /usr/src/app
+RUN mkdir /rdocker && git clone https://github.com/qxf2/qxf2-page-object-model.git
 
-WORKDIR /usr/src/app
-
-RUN ls
+WORKDIR /rdocker
 
 COPY rdocker .
 
 RUN npm install
-
-RUN npm build
 
 CMD ["npm", "start"]
 
