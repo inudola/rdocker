@@ -1,8 +1,8 @@
 FROM node:11.10.0
 
-RUN mkdir /react-doc
+RUN mkdir -p /usr/src/app
 
-WORKDIR /react-doc
+WORKDIR /usr/src/app
 
 COPY react-doc .
 
