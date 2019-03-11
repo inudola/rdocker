@@ -5,7 +5,7 @@ node {
     }
     stage('Environment') {
       sh 'git --version'
-      sh 'su'
+      sh 'chmod +x /var/jenkins_home/workspace/react-app_master@tmp/durable-28eb0ce0/script.sh'
       sh 'docker -v'
       echo "Branch: ${env.BRANCH_NAME}"
      
